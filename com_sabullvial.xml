@@ -2,10 +2,11 @@
 <updates>
     <update>
         <name>SABullvial</name>
-        <version>0.41.2</version>
-        <element>sabullvial</element>
+        <element>com_joomlaupdate</element>
+        <element>com_sabullvial</element>
         <type>component</type>
-        <client>site</client>
+        <client>administrator</client>
+        <version>0.41.2</version>
         <tags>
             <tag>stable</tag>
         </tags>
