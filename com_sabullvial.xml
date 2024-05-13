@@ -2,7 +2,6 @@
 <updates>
     <update>
         <name>SABullvial</name>
-        <element>com_joomlaupdate</element>
         <element>com_sabullvial</element>
         <type>component</type>
         <client>administrator</client>
