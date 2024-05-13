@@ -11,7 +11,6 @@
         </tags>
         <downloads>
             <downloadurl type="full" format="zip">https://github.com/alejoasotelo/com_sabullvial/releases/download/0.41.2/com_sabullvial.zip</downloadurl>
-            <!-- <downloadurl type="full" format="zip">https://api.github.com/repos/alejoasotelo/com_sabullvial/releases/assets/166315252</downloadurl> -->
         </downloads>
         <targetplatform name="joomla" version="(5\.[01]|4\.[01234]|3\.([789]|10))\."/>
         <infourl title="SA Bullvial">https://alejosotelo.com.ar</infourl>
