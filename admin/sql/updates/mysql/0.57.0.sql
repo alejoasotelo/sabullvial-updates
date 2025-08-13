@@ -1,0 +1,1 @@
+ALTER TABLE `#__sabullvial_remitoestado` ADD `delivery_images` TEXT NULL AFTER `delivery_date`;

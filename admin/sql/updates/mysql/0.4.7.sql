@@ -1,0 +1,1 @@
+ALTER TABLE `#__sabullvial_remitohistorico` CHANGE `id_remito` `numero_remito` VARCHAR(14) NOT NULL; 

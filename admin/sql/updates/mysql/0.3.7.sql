@@ -1,0 +1,2 @@
+ALTER TABLE `#__sabullvial_cotizacion` ADD `iibb` DECIMAL(20, 6) NOT NULL DEFAULT '0.000000' AFTER `dolar`;
+ALTER TABLE `#__sabullvial_cotizacion` ADD `subtotal` DECIMAL(20, 6) NOT NULL DEFAULT '0.000000' AFTER `iibb`;

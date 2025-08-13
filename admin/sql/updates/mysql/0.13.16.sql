@@ -1,0 +1,1 @@
+ALTER TABLE `#__sabullvial_cliente` ADD `cupo_credito` DECIMAL(20, 6) NOT NULL DEFAULT '0.000000' AFTER `id_condicionventa_deseada`;

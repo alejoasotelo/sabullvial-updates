@@ -1,0 +1,20 @@
+$color-primary: #2384d3;
+$color-success: #46a546;
+$color-info: #2f96b4;
+$color-danger: #bd362f;
+$color-warning: #f89406;
+$color-inverse: #444;
+
+$color-primary-dark: darken($color-primary, 10%);
+$color-success-dark: darken($color-success, 10%);
+$color-info-dark: darken($color-info, 10%);
+$color-danger-dark: darken($color-danger, 10%);
+$color-warning-dark: darken($color-warning, 10%);
+$color-inverse-dark: darken($color-inverse, 10%);
+
+$color-primary-light: lighten($color-primary, 10%);
+$color-success-light: lighten($color-success, 10%);
+$color-info-light: lighten($color-info, 10%);
+$color-danger-light: lighten($color-danger, 10%);
+$color-warning-light: lighten($color-warning, 10%);
+$color-inverse-light: lighten($color-inverse, 10%);

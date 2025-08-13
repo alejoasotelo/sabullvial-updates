@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<updates>
+    <update>
+        <name>SABullvial</name>
+        <element>com_sabullvial</element>
+        <type>component</type>
+        <client>administrator</client>
+        <version>{VERSION}</version>
+        <tags>
+            <tag>stable</tag>
+        </tags>
+        <downloads>
+            <downloadurl type="full" format="zip">https://github.com/alejoasotelo/com_sabullvial/releases/download/{VERSION}/com_sabullvial.zip</downloadurl>
+        </downloads>
+        <targetplatform name="joomla" version="(5\.[01]|4\.[01234]|3\.([789]|10))\."/>
+        <infourl title="SA Bullvial">https://alejosotelo.com.ar</infourl>
+        <maintainer>Alejo Sotelo</maintainer>
+        <maintainerurl>https://alejosotelo.com.ar</maintainerurl>
+        <php_minimum>5.3.10</php_minimum>
+    </update>
+</updates>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fields name="filter">
+		<field
+			name="search"
+			type="text"
+			label="COM_BANNERS_SEARCH_IN_TITLE"
+			hint="JSEARCH_FILTER"
+			class="js-stools-search-string"
+		/>
+		<field 
+			name="date_from" 
+			type="customtext"
+			inputtype="date" 
+			label="COM_SABULLVIAL_VENDEDORES_DATE_FROM_LABEL"
+			description="COM_SABULLVIAL_VENDEDORES_DATE_FROM_DESC"
+			addon="Desde"
+			addonposition="left"
+			filter="user_utc"
+			showtime="false"
+			todaybutton="false"
+			filltable="false"
+			translateformat="true"
+			onchange="this.form.submit();"
+		/>
+		<field 
+			name="date_to" 
+			type="customtext"
+			inputtype="date" 
+			label="COM_SABULLVIAL_VENDEDORES_DATE_TO_LABEL"
+			description="COM_SABULLVIAL_VENDEDORES_DATE_TO_DESC"
+			addon="Hasta"
+			addonposition="left"
+			filter="user_utc"
+			showtime="false"
+			todaybutton="false"
+			filltable="false"
+			translateformat="true"
+			onchange="this.form.submit();"
+		/>
+	</fields>
+	<fields name="list">
+		<field
+			name="fullordering"
+			type="list"
+			label="COM_SABULLVIAL_LIST_FULL_ORDERING"
+			description="COM_SABULLVIAL_LIST_FULL_ORDERING_DESC"
+			onchange="this.form.submit();"
+			default="name ASC"
+			validate="options"
+			>
+			<option value="">JGLOBAL_SORT_BY</option>
+			<option value="name ASC">COM_SABULLVIAL_ORDERING_ASC</option>
+			<option value="name DESC">COM_SABULLVIAL_ORDERING_DESC</option>
+			<option value="cotizaciones ASC">COM_SABULLVIAL_COTIZACIONES_ASC</option>
+			<option value="cotizaciones DESC">COM_SABULLVIAL_COTIZACIONES_DESC</option>
+			<option value="cotizaciones_aprobadas ASC">COM_SABULLVIAL_COTIZACIONES_APROBADAS_ASC</option>
+			<option value="cotizaciones_aprobadas DESC">COM_SABULLVIAL_COTIZACIONES_APROBADAS_DESC</option>
+			<option value="cotizaciones_rechazadas ASC">COM_SABULLVIAL_COTIZACIONES_RECHAZADAS_ASC</option>
+			<option value="cotizaciones_rechazadas DESC">COM_SABULLVIAL_COTIZACIONES_RECHAZADAS_DESC</option>
+			<option value="cotizaciones_sin_concretar ASC">COM_SABULLVIAL_COTIZACIONES_SIN_CONCRETAR_ASC</option>
+			<option value="cotizaciones_sin_concretar DESC">COM_SABULLVIAL_COTIZACIONES_SIN_CONCRETAR_DESC</option>
+			<option value="cotizaciones_efectividad ASC">COM_SABULLVIAL_COTIZACIONES_EFECTIVIDAD_ASC</option>
+			<option value="cotizaciones_efectividad DESC">COM_SABULLVIAL_COTIZACIONES_EFECTIVIDAD_DESC</option>
+		</field>
+		<field
+			name="limit"
+			type="limitbox"
+			class="input-mini"
+			default="25"
+			label="COM_CONTENT_LIST_LIMIT"
+			description="COM_SABULLVIAL_LIST_LIMIT_DESC"
+			onchange="this.form.submit();"
+		/>
+	</fields>
+</form>

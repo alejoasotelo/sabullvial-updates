@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset name="basic">
+		<field
+			name="id"
+			type="number"
+			label="JGLOBAL_FIELD_ID_LABEL"
+			description="JGLOBAL_FIELD_ID_DESC"
+			default="0"
+			class="readonly"
+			readonly="true"
+		/>
+
+    	<field
+			name="asset_id"
+			type="hidden"
+			filter="unset"
+		/>
+
+		<field
+			name="nombre"
+			type="text"
+			label="COM_SABULLVIAL_ESTADO_COTIZACION_NOMBRE_LABEL"
+			description="COM_SABULLVIAL_ESTADO_COTIZACION_NOMBRE_DESC"
+			size="40"
+			class="inputbox"
+			default=""			
+			required="true"
+			onchange="jQuery('#jform_title').val(this.value);"
+		/>
+
+		<field
+			name="title"
+			type="hidden"
+		/>
+
+		<field
+			name="color"
+			type="color"
+			label="COM_SABULLVIAL_ESTADO_COTIZACION_COLOR_LABEL"
+			description="COM_SABULLVIAL_ESTADO_COTIZACION_COLOR_DESC"
+			size="40"
+			class="inputbox"
+			default=""			
+			required="true"
+		/>
+
+		<field
+			name="color_texto"
+			type="color"
+			label="COM_SABULLVIAL_ESTADO_COTIZACION_COLOR_TEXTO_LABEL"
+			description="COM_SABULLVIAL_ESTADO_COTIZACION_COLOR_TEXTO_DESC"
+			size="40"
+			class="inputbox"
+			default="#ffffff"			
+			required="true"
+		/>
+
+		<field
+			name="published"
+			type="list"
+			label="JSTATUS"
+			description="JFIELD_PUBLISHED_DESC"
+			class="chzn-color-state"
+			default="1"
+			size="1"
+			>
+			<option value="1">JPUBLISHED</option>
+			<option value="0">JUNPUBLISHED</option>
+			<option value="2">JARCHIVED</option>
+			<option value="-2">JTRASHED</option>
+		</field>
+
+		<field
+			name="created"
+			type="calendar"
+			label="JGLOBAL_FIELD_CREATED_LABEL"
+			description="COM_SABULLVIAL_FIELD_CREATED_DESC"
+			translateformat="true"
+			showtime="true"
+			size="22"
+			filter="user_utc"
+		/>
+
+		<field
+			name="created_by"
+			type="user"
+			label="COM_SABULLVIAL_FIELD_CREATED_BY_LABEL"
+			description="COM_SABULLVIAL_FIELD_CREATED_BY_DESC"
+		/>
+
+		<field
+			name="created_by_alias"
+			type="text"
+			label="COM_SABULLVIAL_FIELD_CREATED_BY_ALIAS_LABEL"
+			description="COM_SABULLVIAL_FIELD_CREATED_BY_ALIAS_DESC"
+			size="20"
+		/>
+
+		<field
+			name="modified"
+			type="calendar"
+			label="JGLOBAL_FIELD_MODIFIED_LABEL"
+			description="COM_SABULLVIAL_FIELD_MODIFIED_DESC"
+			class="readonly"
+			translateformat="true"
+			showtime="true"
+			size="22"
+			readonly="true"
+			filter="user_utc"
+		/>
+
+		<field
+			name="modified_by"
+			type="user"
+			label="JGLOBAL_FIELD_MODIFIED_BY_LABEL"
+			class="readonly"
+			readonly="true"
+			filter="unset"
+		/>
+		
+    	<field
+			name="rules"
+			type="rules"
+			label="JFIELD_RULES_LABEL"
+			id="rules"
+			translate_label="false"
+			filter="rules"
+			validate="rules"
+			component="com_sabullvial"
+			section="estadocotizacion"
+		/>
+
+		<field  
+			name="access" 
+			type="accesslevel" 
+			label="JFIELD_ACCESS_LABEL"
+			description="JFIELD_ACCESS_DESC"
+		/>
+
+		<field name="considerar" type="spacer" label="&lt;b&gt;Considerar cotización como&lt;/b&gt;"/>
+
+		<field
+			name="aprobado"
+			type="radio"
+			label="COM_SABULLVIAL_ESTADO_COTIZACION_APROBADO_LABEL"
+			description="COM_SABULLVIAL_ESTADO_COTIZACION_APROBADO_DESC"
+			class="btn-group btn-group-yesno"
+			value="0"
+		>
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+
+		<field
+			name="pendiente"
+			type="radio"
+			label="COM_SABULLVIAL_ESTADO_COTIZACION_PENDIENTE_LABEL"
+			description="COM_SABULLVIAL_ESTADO_COTIZACION_PENDIENTE_DESC"
+			class="btn-group btn-group-yesno"
+			value="0"
+		>
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+
+		<field
+			name="rechazado"
+			type="radio"
+			label="COM_SABULLVIAL_ESTADO_COTIZACION_RECHAZADO_LABEL"
+			description="COM_SABULLVIAL_ESTADO_COTIZACION_RECHAZADO_DESC"
+			class="btn-group btn-group-yesno"
+			value="0"
+		>
+			<option value="1">JOPTION_COTIZACION_RECHAZADO</option>
+			<option value="2">JOPTION_COTIZACION_RECHAZADO_POR_FORMA_DE_PAGO</option>
+			<option value="0">JNO</option>
+		</field>
+
+		<field
+			name="cancelado"
+			type="radio"
+			label="COM_SABULLVIAL_ESTADO_COTIZACION_CANCELADO_LABEL"
+			description="COM_SABULLVIAL_ESTADO_COTIZACION_CANCELADO_DESC"
+			class="btn-group btn-group-yesno"
+			value="0"
+		>
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+
+		<field
+			name="revisado"
+			type="radio"
+			label="COM_SABULLVIAL_ESTADO_COTIZACION_REVISADO_LABEL"
+			description="COM_SABULLVIAL_ESTADO_COTIZACION_REVISADO_DESC"
+			class="btn-group btn-group-yesno"
+			value="0"
+		>
+			<option value="1">JOPTION_COTIZACION_COMPLETA</option>
+			<option value="2">JOPTION_COTIZACION_INCOMPLETA</option>
+			<option value="3">JOPTION_COTIZACION_AUTOMATICA</option>
+			<option value="0">JNO</option>
+		</field>
+	</fieldset>
+</form>

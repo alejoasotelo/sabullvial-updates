@@ -1,0 +1,1 @@
+ALTER TABLE `#__sabullvial_cotizacion` ADD `solicitante` varchar(255) NULL DEFAULT '' AFTER `ordendecompra_file_ext`;

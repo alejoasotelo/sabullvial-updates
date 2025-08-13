@@ -1,0 +1,2 @@
+ALTER TABLE `#__sabullvial_productoimagen` CHANGE `id_producto` `id_producto` VARCHAR(15) NOT NULL; 
+ALTER TABLE `#__sabullvial_cotizaciondetalle` CHANGE `id_producto` `id_producto` VARCHAR(15) NOT NULL; 

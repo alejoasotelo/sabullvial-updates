@@ -1,0 +1,1 @@
+ALTER TABLE `#__sabullvial_cotizaciondetalle` ADD `descuento` DECIMAL(20, 6) NOT NULL DEFAULT '0.000000' AFTER `cantidad`;

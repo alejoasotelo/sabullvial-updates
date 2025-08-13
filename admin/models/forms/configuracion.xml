@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset>		
+		<field
+			name="COTI_DOL"
+			type="xxxconfig"
+			label="COM_SABULLVIAL_CONFIGURACION_COTIZACION_DOLAR_LABEL"
+			description="COM_SABULLVIAL_CONFIGURACION_COTIZACION_DOLAR_DESC"
+			class="inputbox"
+			required="true"
+			addon="$"
+			addonposition="left"
+		/>
+		
+		<field
+			name="FAC_MAIL"
+			type="xxxconfig"
+			label="COM_SABULLVIAL_CONFIGURACION_EMAIL_FACTURACION_COTIZACIONES_LABEL"
+			description="COM_SABULLVIAL_CONFIGURACION_EMAIL_FACTURACION_COTIZACIONES_DESC"
+			class="inputbox"
+			required="true"
+		/>
+		
+		<field
+			name="PORC_DIA"
+			type="xxxconfig"
+			label="COM_SABULLVIAL_CONFIGURACION_PORCENTAJE_FINANCIACION_DIARIA_LABEL"
+			class="inputbox"
+			required="true"
+			addon="%"
+			addonposition="right"
+		/>
+		
+		<field
+			name="VAL_OFF"
+			type="xxxconfig"
+			label="COM_SABULLVIAL_CONFIGURACION_MANTENIMIENTO_OFERTA_PDF_LABEL"
+			description="COM_SABULLVIAL_CONFIGURACION_MANTENIMIENTO_OFERTA_PDF_DESC"
+			class="inputbox"
+			required="true"
+		/>
+
+		<field type="spacer" name="myspacer1" label="COM_SABULLVIAL_CONFIGURACION_TAREAS_LABEL" />
+		
+		<field
+			name="CRM_DIAS"
+			type="xxxconfig"
+			label="COM_SABULLVIAL_CONFIGURACION_DIAS_PRESUPUESTO_LABEL"
+			description="COM_SABULLVIAL_CONFIGURACION_DIAS_PRESUPUESTO_DESC"
+			class="inputbox"
+			required="true"
+			addon="dias"
+			addonposition="right"
+		/>
+
+		<field type="spacer" name="myspacer2" label="COM_SABULLVIAL_CONFIGURACION_FECHA_Y_HORA_ULTIMA_IMPORTACION_LABEL" />
+		
+		<field
+			name="IMP_ARTS"
+			type="xxxconfig"
+			label="COM_SABULLVIAL_CONFIGURACION_IMPORTACION_BASICA_LABEL"
+			description="COM_SABULLVIAL_CONFIGURACION_IMPORTACION_BASICA_DESC"
+			class="inputbox" 
+			readonly="true"
+		/>
+		
+		<field
+			name="IMP_CTA"
+			type="xxxconfig"
+			label="COM_SABULLVIAL_CONFIGURACION_IMPORTACION_CUENTA_CORRIENTE_LABEL"
+			description="COM_SABULLVIAL_CONFIGURACION_IMPORTACION_CUENTA_CORRIENTE_DESC"
+			class="inputbox"
+			readonly="true"
+		/>
+		
+		<field
+			name="IMP_REM"
+			type="xxxconfig"
+			label="COM_SABULLVIAL_CONFIGURACION_IMPORTACION_REMITOS_LABEL"
+			description="COM_SABULLVIAL_CONFIGURACION_IMPORTACION_REMITOS_DESC"
+			class="inputbox"
+			readonly="true"
+		/>
+	</fieldset>
+</form>

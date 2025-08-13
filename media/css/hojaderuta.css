@@ -1,0 +1,26 @@
+.view-hojaderuta {
+  /** nowrap-sm */
+}
+@media (max-width: 1024px) {
+  .view-hojaderuta .subform-table-layout td {
+    padding-left: 30%;
+  }
+}
+@media (min-width: 768px) {
+  .view-hojaderuta .nowrap-sm {
+    white-space: nowrap;
+  }
+}
+@media (min-width: 1024px) {
+  .view-hojaderuta .nowrap-md {
+    white-space: nowrap;
+  }
+}
+@media (min-width: 1200px) {
+  .view-hojaderuta .nowrap-lg {
+    white-space: nowrap;
+  }
+}
+.view-hojaderuta td[data-fieldname=mercaderia] .controls ul {
+  margin-left: 12px;
+}/*# sourceMappingURL=hojaderuta.css.map */

@@ -1,0 +1,1 @@
+ALTER TABLE `#__sabullvial_cotizacion` ADD `id_condicionventa_fake` INT(11) NOT NULL AFTER `id_condicionventa`;

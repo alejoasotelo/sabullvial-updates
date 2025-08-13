@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fields name="filter">
+		<field
+			name="search"
+			type="text"
+			inputmode="search"
+			label="COM_BANNERS_SEARCH_IN_TITLE"
+			hint="JSEARCH_FILTER"
+			class="js-stools-search-string"
+		/>
+
+		<field
+			name="estado"
+			type="estadoremito"
+			label="JOPTION_SELECT_PUBLISHED"
+			description="JOPTION_SELECT_PUBLISHED_DESC"
+			onchange="changeEstado(this)"
+			>
+			<option value="">JOPTION_SELECT_PUBLISHED</option>
+		</field>
+
+		<field
+			name="codigo_vendedor"
+			type="sitvendedor"
+			label="COM_SABULLVIAL_CODIGO_VENDEDOR_LABEL"
+			description="COM_SABULLVIAL__CODIGO_VENDEDOR_DESC"
+			show_inhabilitados="true"
+			show_codigo_label="true"
+			default=""
+			onchange="changeCodigoVendedor(this)"
+		>
+			<option value="">JOPTION_SELECT_VENDEDOR</option>
+		</field>
+		
+		<field 
+			name="date_from" 
+			type="customtext"
+			inputtype="date" 
+			label="COM_SABULLVIAL_REMITOS_DATE_FROM_LABEL"
+			description="COM_SABULLVIAL_REMITOS_DATE_FROM_DESC"
+			addon="Desde"
+			addonposition="left"
+			filter="user_utc"
+			showtime="false"
+			todaybutton="false"
+			filltable="false"
+			translateformat="true"
+			descriptiontooltip="true"
+		/>
+		<field 
+			name="date_to" 
+			type="customtext"
+			inputtype="date" 
+			label="COM_SABULLVIAL_REMITOS_DATE_TO_LABEL"
+			description="COM_SABULLVIAL_REMITOS_DATE_TO_DESC"
+			addon="Hasta"
+			addonposition="left"
+			filter="user_utc"
+			showtime="false"
+			todaybutton="false"
+			filltable="false"
+			translateformat="true"
+			descriptiontooltip="true"
+		/>
+	</fields>
+	<fields name="list">
+		<field
+			name="fullordering"
+			type="list"
+			label="COM_SABULLVIAL_LIST_FULL_ORDERING"
+			description="COM_SABULLVIAL_LIST_FULL_ORDERING_DESC"
+			onchange="changeOrdering(this);"
+			default="r.N_REMITO DESC"
+			validate="options"
+			>
+			<option value="">JGLOBAL_SORT_BY</option>
+			<option value="r.N_REMITO ASC">COM_SABULLVIAL_REMITOS_NUMERO_REMITO_ASC</option>
+			<option value="r.N_REMITO DESC">COM_SABULLVIAL_REMITOS_NUMERO_REMITO_DESC</option>
+			<option value="f.NCOMP_FAC ASC">COM_SABULLVIAL_REMITOS_NUMERO_FACTURA_ASC</option>
+			<option value="f.NCOMP_FAC DESC">COM_SABULLVIAL_REMITOS_NUMERO_FACTURA_DESC</option>
+			<option value="r.N_REMITO ASC">JGRID_HEADING_ID_ASC</option>
+			<option value="r.N_REMITO DESC">JGRID_HEADING_ID_DESC</option>
+			<option value="cliente ASC">COM_SABULLVIAL_REMITOS_CLIENTE_ASC</option>
+			<option value="cliente DESC">COM_SABULLVIAL_REMITOS_CLIENTE_DESC</option>
+			<option value="expreso ASC">COM_SABULLVIAL_REMITOS_EXPRESO_ASC</option>
+			<option value="expreso DESC">COM_SABULLVIAL_REMITOS_EXPRESO_DESC</option>
+			<option value="direccion_entrega ASC">COM_SABULLVIAL_REMITOS_DIRECCION_ENTREGA_ASC</option>
+			<option value="direccion_entrega DESC">COM_SABULLVIAL_REMITOS_DIRECCION_ENTREGA_DESC</option>
+			<option value="monto_remito ASC">COM_SABULLVIAL_REMITOS_MONTO_REMITO_ASC</option>
+			<option value="monto_remito DESC">COM_SABULLVIAL_REMITOS_MONTO_REMITO_DESC</option>
+			<option value="delivery_date ASC">COM_SABULLVIAL_REMITOS_FECHA_ENTREGA_ASC</option>
+			<option value="delivery_date DESC">COM_SABULLVIAL_REMITOS_FECHA_ENTREGA_DESC</option>
+			<option value="fecha_remito ASC">COM_SABULLVIAL_REMITOS_FECHA_REMITO_ASC</option>
+			<option value="fecha_remito DESC">COM_SABULLVIAL_REMITOS_FECHA_REMITO_DESC</option>
+		</field>
+		<field
+			name="limit"
+			type="limitbox"
+			class="input-mini"
+			default="25"
+			label="COM_CONTENT_LIST_LIMIT"
+			description="COM_SABULLVIAL_LIST_LIMIT_DESC"
+			onchange="changeLimit(this);"
+		/>
+	</fields>
+</form>

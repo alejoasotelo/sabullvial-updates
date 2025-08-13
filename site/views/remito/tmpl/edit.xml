@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="COM_SABULLVIAL_REMITO_VIEW_EDIT_TITLE">
+		<message>COM_SABULLVIAL_REMITO_VIEW_EDIT_DESC</message>
+	</layout>
+	<fields	name="request" addfieldpath="/administrator/components/com_sabullvial/models/fields">
+		<fieldset name="request">
+			<field
+				name="id"
+				type="remitoajax"
+				label="COM_SABULLVIAL_REMITO_FIELD_NAME_LABEL"
+				description="COM_SABULLVIAL_REMITO_FIELD_NAME_DESC"
+				/>
+		</fieldset>
+	</fields>
+	<fields name="params">
+		<fieldset name="basic" addfieldpath="/administrator/components/com_categories/models/fields">
+			<field
+				name="redirect_menuitem"
+				type="modal_menu"
+				label="COM_SABULLVIAL_REMITO_FIELD_REDIRECT_MENU_SUCCESS_LABEL"
+				description="COM_SABULLVIAL_REMITO_FIELD_REDIRECT_MENU_SUCCESS_DESC"
+				>
+				<option value="">JDEFAULT</option>
+			</field>
+		</fieldset>
+	</fields>
+</metadata>

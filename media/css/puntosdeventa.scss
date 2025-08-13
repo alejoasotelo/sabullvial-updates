@@ -1,0 +1,195 @@
+@use "sass:math";
+
+.com_sabullvial {
+    .control-label {
+        [class*="span"] {
+            min-height: inherit !important;
+        }
+    }
+
+    .input-producto-nombre {
+        margin-bottom: 0px;
+
+        &:not(:invalid) + div {
+            display: none;
+        }
+    }
+
+    select {
+        &.select-micro {
+            padding: 0px 2px;
+            font-size: 12px;
+            height: 18px;
+            margin-bottom: 0px;
+
+            &.span {
+                margin-bottom: 0px;
+            }
+        }
+
+        &.select-mini {
+            height: 24px;
+            margin-bottom: 4px;
+        }
+
+        &.w-100 {
+            width: 100%;
+        }
+    }
+
+    .reduce-br + .chzn-container {
+        .chzn-single {
+            b {
+                font-weight: normal;
+            }
+            br {
+                display: block;
+                margin-bottom: -12px;
+            }
+            .chzn-on-title-hide {
+                display: none;
+            }
+        }
+    }
+
+    .control-group.error {
+        input {
+            margin-bottom: 0px;
+        }
+    }
+
+    @media (min-width: 768px) {
+        $width-sidebar: 440px;
+        .j-sidebar-container {
+            width: $width-sidebar;
+
+            .vue-form-cliente {
+                width: 100%;
+
+                input {
+                    width: calc(100% - 150px);
+                }
+            }
+        }
+
+        #j-main-container {
+            width: calc(100% - #{$width-sidebar});
+        }
+    }
+
+    @media (min-width: 768px) and (max-width: 1440px) {
+        .field-clienteortext-wrapper {
+            .input-append {
+                width: 100%;
+                white-space: normal;
+
+                input {
+                    display: block;
+                    width: 95%;
+                }
+
+                button {
+                    margin-top: 4px;
+                    &:first-of-type {
+                        border-radius: 3px 0 0 3px;
+                        margin-left: 0px;
+                    }
+                }
+
+                .field-clienteortext-input-name {
+                    border-radius: 3px;
+                }
+            }
+        }
+
+        #previewCotizacion {
+            $modal-width: 90vw;
+            width: $modal-width;
+            margin-left: math.div(-$modal-width, 2);
+
+            label[for="filter_id_condicionventa_fake"] + select {
+                margin-top: -6px;
+            }
+        }
+    }
+
+    .documento-field {
+        margin-top: -12px;
+        .input-prepend .btn-group > .dropdown-toggle {
+            padding-bottom: 3px;
+            -webkit-border-radius: 3px 0 0 3px;
+            -moz-border-radius: 3px 0 0 3px;
+            border-radius: 3px 0 0 3px;
+        }
+    }
+
+    .cliente-choices-item {
+        &.cliente-inhabilitado {
+        }
+
+        .cliente-choice-item-inhabilitado {
+            color: red;
+        }
+    }
+
+    #modalProductoCarousel {
+        max-width: calc(100vw - 24px);
+    }
+}
+
+.notify-title {
+    min-width: 270px;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+#system-message-container {
+    & > div:last-child {
+        margin-bottom: 34px;
+    }
+}
+
+.ml-1 {
+    margin-left: 5px;
+}
+.mr-1 {
+    margin-right: 5px;
+}
+
+.table-totales, .btn-esperar-pagos{
+    margin: 0px 0px 0px auto;
+}
+
+.table-totales {
+    width: auto !important;
+    max-width: 280px;
+}
+
+.btn-esperar-pagos{
+    width: 160px;
+}
+
+
+#previewCotizacion {
+    .input-xxlarge {
+        width: 360px;
+
+        @media (max-width: 767px) {
+            width: 100%;
+        }
+    }
+}
+
+.line-height-12{
+    line-height: 12px !important;
+}
+
+.font-small{
+    @media (max-width: 767px) {
+        &\@xs {
+            font-size: 12px !important;
+        }
+    }
+}

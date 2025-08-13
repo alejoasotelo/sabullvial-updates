@@ -1,0 +1,1 @@
+ALTER TABLE `#__sabullvial_tarea` CHANGE `id_cliente` `id_cotizacion` INT(11) NOT NULL;

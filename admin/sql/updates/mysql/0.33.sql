@@ -1,0 +1,1 @@
+ALTER TABLE `#__sabullvial_productoimagen` ADD `url` TEXT NULL AFTER `images`;

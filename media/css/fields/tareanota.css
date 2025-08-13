@@ -1,0 +1,74 @@
+.tareanota-wrapper {
+  max-width: 460px;
+}
+.tareanota-wrapper .tareanota-input-container {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 18px;
+  width: 100%;
+}
+.tareanota-wrapper .tareanota-input-container textarea {
+  padding-bottom: 50px;
+}
+.tareanota-wrapper .tareanota-input-container button {
+  position: absolute;
+  right: 12px;
+  bottom: 12px;
+}
+.tareanota-wrapper .tareanota-notas-container {
+  color: #626262;
+  padding: 8px 15px;
+  background: #ebebeb;
+  border: 1px solid #dedede;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.0784313725);
+}
+.tareanota-wrapper .tareanota-notas-container .tareanota-notas-title {
+  font-size: 16px;
+  line-height: 28px;
+  margin-bottom: 32px;
+}
+.tareanota-wrapper .tareanota-notas-container .chat-bubble {
+  display: block;
+  margin-bottom: 32px;
+}
+.tareanota-wrapper .tareanota-notas-container .chat-bubble:last-child {
+  margin-bottom: 16px;
+}
+.tareanota-wrapper .tareanota-notas-container .chat-bubble .chat-bubble-author {
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+.tareanota-wrapper .tareanota-notas-container .chat-bubble .chat-bubble-body {
+  position: relative;
+  display: inline-block;
+  background: white;
+  padding: 15px;
+  padding-right: 30px;
+  margin-bottom: 4px;
+  border: 1px solid #f2f2f2;
+  border-radius: 15px;
+  border-top-left-radius: 0px;
+}
+.tareanota-wrapper .tareanota-notas-container .chat-bubble .chat-bubble-body .chat-bubble-btn-delete {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  color: #6c757d;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+}
+.tareanota-wrapper .tareanota-notas-container .chat-bubble .chat-bubble-body .chat-bubble-btn-delete span {
+  margin: 0px;
+}
+.tareanota-wrapper .tareanota-notas-container .chat-bubble .chat-bubble-body .chat-bubble-btn-delete:hover {
+  color: black;
+}
+.tareanota-wrapper .tareanota-notas-container .chat-bubble .chat-bubble-info {
+  font-size: 12px;
+}
+.tareanota-wrapper .tareanota-notas-container .chat-bubble .chat-bubble-author,
+.tareanota-wrapper .tareanota-notas-container .chat-bubble .chat-bubble-info {
+  margin-left: 1px;
+}/*# sourceMappingURL=tareanota.css.map */

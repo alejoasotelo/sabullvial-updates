@@ -1,0 +1,1 @@
+ALTER TABLE `#__sabullvial_hojaderuta` CHANGE `patente_transporte` `patente` VARCHAR(20) NOT NULL; 

@@ -1,0 +1,2 @@
+ALTER TABLE `#__sabullvial_cotizacion` ADD COLUMN `descuento` DECIMAL(20, 6) NOT NULL DEFAULT '0.000000' AFTER `total`;
+ALTER TABLE `#__sabullvial_cotizacion` CHANGE `service` `servicio` tinyint NOT NULL DEFAULT 0;

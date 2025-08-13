@@ -1,0 +1,1 @@
+ALTER TABLE `#__sabullvial_cliente` ADD `id_condicionventa_deseada` VARCHAR(255) NOT NULL DEFAULT '' AFTER `id_condicionventa`;

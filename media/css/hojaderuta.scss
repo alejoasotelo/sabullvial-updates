@@ -1,0 +1,33 @@
+.view-hojaderuta {
+    @media (max-width: 1024px) {
+        .subform-table-layout td {
+            padding-left: 30%;
+        }
+    }
+
+    /** nowrap-sm */
+    // Path: component/media/css/hojaderuta.scss
+    .nowrap {
+        &-sm {
+            @media (min-width: 768px) {
+                white-space: nowrap;
+            }
+        }
+
+        &-md {
+            @media (min-width: 1024px) {
+                white-space: nowrap;
+            }
+        }
+
+        &-lg {
+            @media (min-width: 1200px) {
+                white-space: nowrap;
+            }
+        }
+    }
+
+    td[data-fieldname="mercaderia"] .controls ul{
+        margin-left: 12px;
+    }
+}

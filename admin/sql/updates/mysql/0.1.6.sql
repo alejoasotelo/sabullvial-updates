@@ -1,0 +1,1 @@
+ALTER TABLE `#__sabullvial_estadoremito` ADD INDEX `nombre_idx` (`nombre`); 

@@ -1,0 +1,1 @@
+ALTER TABLE `#__sabullvial_cotizacionhistorico` ADD INDEX `id_cotizacion_idx` (`id_cotizacion`);

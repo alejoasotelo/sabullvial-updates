@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="COM_SABULLVIAL_COTIZACION_VIEW_DEFAULT_TITLE">
+		<message>COM_SABULLVIAL_COTIZACION_VIEW_DEFAULT_DESC</message>
+	</layout>
+	<fields	name="request" addfieldpath="/administrator/components/com_sabullvial/models/fields">
+		<fieldset name="request">
+			<field
+				name="id"
+				type="cotizacion"
+				label="COM_SABULLVIAL_COTIZACION_FIELD_NAME_LABEL"
+				description="COM_SABULLVIAL_COTIZACION_FIELD_NAME_DESC"
+				/>
+		</fieldset>
+	</fields>
+</metadata>

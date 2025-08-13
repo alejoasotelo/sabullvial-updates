@@ -1,0 +1,1 @@
+ALTER TABLE `#__sabullvial_cotizaciondetalle` DROP `con_iva`;

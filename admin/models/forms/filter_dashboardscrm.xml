@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fields name="filter">
+		<field
+			name="search"
+			type="text"
+			label="COM_BANNERS_SEARCH_IN_TITLE"
+			hint="JSEARCH_FILTER"
+			class="js-stools-search-string"
+		/>
+<!-- 		
+		<field
+			name="author_id"
+			type="autor"
+			context="sabullvial_cotizacion"
+			label="COM_SABULLVIAL_FILTER_VENDEDOR_LABEL"
+			description="COM_SABULLVIAL_FILTER_VENDEDOR_DESC"
+			onchange="this.form.submit();"
+			>
+			<option value="">JOPTION_SELECT_VENDEDOR</option>
+		</field> -->
+
+		<field
+			name="codigo_vendedor"
+			type="sitvendedor"
+			label="COM_SABULLVIAL_CODIGO_VENDEDOR_LABEL"
+			description="COM_SABULLVIAL__CODIGO_VENDEDOR_DESC"
+			onchange="changeCodigoVendedor(this)"
+			show_inhabilitados="true"
+			show_codigo_label="true"
+			default=""
+		>
+			<option value="">JOPTION_SELECT_VENDEDOR</option>
+		</field>
+
+		<field
+			name="codigo_cliente"
+			type="clientetangoajax"
+			label="JOPTION_SELECT_CLIENTE_TANGO"
+			onchange="changeCodigoCliente(this);"
+			class="no-chosen no-select2 input-xxlarge"
+		>
+			<option value="">JOPTION_SELECT_CLIENTE_TANGO</option>
+		</field>
+
+		<field 
+			name="date_from"
+			type="customtext"
+			inputtype="date"
+			class="input-medium"
+			label="COM_SABULLVIAL_VENDEDORES_DATE_FROM_LABEL"
+			description="COM_SABULLVIAL_VENDEDORES_DATE_FROM_DESC"
+			descriptiontooltip="true"
+			addon="Desde"
+			addonposition="left"
+			filter="user_utc"
+			showtime="false"
+			todaybutton="false"
+			filltable="false"
+			translateformat="true"
+		/>
+
+		<field 
+			name="date_to"
+			type="customtext"
+			inputtype="date"
+			class="input-medium"
+			label="COM_SABULLVIAL_VENDEDORES_DATE_TO_LABEL"
+			description="COM_SABULLVIAL_VENDEDORES_DATE_TO_DESC"
+			descriptiontooltip="true"
+			addon="Hasta"
+			addonposition="left"
+			filter="user_utc"
+			showtime="false"
+			todaybutton="false"
+			filltable="false"
+			translateformat="true"
+		/>		
+
+		<field 
+			name="total_from"
+			type="customtext"
+			inputtype="number"
+			class="input-small"
+			label="COM_SABULLVIAL_DASHBOARDS_CRM_TOTAL_FROM_LABEL"
+			description="COM_SABULLVIAL_DASHBOARDS_CRM_TOTAL_FROM_DESC"
+			descriptiontooltip="true"
+			addon="COM_SABULLVIAL_DASHBOARDS_CRM_TOTAL_FROM_LABEL"
+			addontranslate="true"
+			addonposition="left"
+			onchange="changeTotalFrom(this)"
+		/>
+		<field 
+			name="total_to"
+			type="customtext"
+			inputtype="number"
+			class="input-small"
+			label="COM_SABULLVIAL_DASHBOARDS_CRM_TOTAL_TO_LABEL"
+			description="COM_SABULLVIAL_DASHBOARDS_CRM_TOTAL_TO_DESC"
+			descriptiontooltip="true"
+			addon="COM_SABULLVIAL_DASHBOARDS_CRM_TOTAL_TO_LABEL"
+			addontranslate="true"
+			addonposition="left"
+			onchange="changeTotalTo(this)"
+		/>
+	</fields>
+	<fields name="list">
+		<field
+			name="fullordering"
+			type="list"
+			label="COM_SABULLVIAL_LIST_FULL_ORDERING"
+			description="COM_SABULLVIAL_LIST_FULL_ORDERING_DESC"
+			onchange="this.form.submit();"
+			default="c.created DESC"
+			validate="options"
+			>
+			<option value="c.created ASC">COM_SABULLVIAL_CREATED_ASC</option>
+			<option value="c.created DESC">COM_SABULLVIAL_CREATED_DESC</option>
+			<option value="total ASC">COM_SABULLVIAL_TOTAL_ASC</option>
+			<option value="total DESC">COM_SABULLVIAL_TOTAL_DESC</option>
+		</field>
+	</fields>
+</form>

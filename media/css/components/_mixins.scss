@@ -1,0 +1,51 @@
+$sm: 575.98px;
+$md: 767.98px;
+$lg: 991.98px;
+$xl: 1199.98px;
+$xxl: 1399.98px;
+
+@mixin repeat($property, $prefix, $direction, $from, $to, $unit) {
+    @for $i from $from through $to {
+        #{$prefix}#{$i} {
+            #{$property}-#{$direction}: $i * $unit;
+        }
+    }
+}
+
+@mixin repeat-important($property, $prefix, $direction, $from, $to, $unit) {
+    @for $i from $from through $to {
+        #{$prefix}#{$i}-i {
+            #{$property}-#{$direction}: $i * $unit !important;
+        }
+    }
+}
+
+@mixin sm{
+    @media (max-width: #{$sm}) {
+        @content;
+    }
+}
+
+@mixin md{
+    @media (max-width: #{$md}) {
+        @content;
+    }
+}
+
+@mixin lg{
+    @media (max-width: #{$lg}) {
+        @content;
+    }
+}
+
+@mixin xl{
+    @media (max-width: #{$xl}) {
+        @content;
+    }
+}
+
+@mixin xxl{
+    @media (max-width: #{$xxl}) {
+        @content;
+    }
+}

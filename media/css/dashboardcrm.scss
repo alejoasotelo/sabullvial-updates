@@ -1,0 +1,64 @@
+.card-tarea {
+    background: white;
+    border: 1px solid #dedede;
+    padding: 8px;
+    margin-bottom: 0.5rem;
+
+    .row {
+        margin: 0 auto;
+    }
+}
+
+.container-main {
+    .j-sidebar-container {
+        padding-top: 0px;
+    }
+
+    .container-loading {
+        opacity: 0.5;
+    }
+
+    .js-stools {
+        & > div:first-child {
+            margin-top: 10px;
+            float: right;
+            width: 20%;
+        }
+        .js-stools-container-filters {
+            display: block !important;
+            width: 80%;
+        }
+    }
+}
+
+.table {
+    th, td {
+        &.text-left {
+            text-align: left;
+        }
+        
+        &.text-center {
+            text-align: center;
+        }
+
+        &.text-right {
+            text-align: right;
+        }
+    }
+}
+
+.table-footer-totals{
+    tfoot {
+        tr {
+            background-color: #e1e1e1;
+
+            td {
+                border-left: 1px solid #ccc;
+            }
+        }
+    }
+}
+
+.font-bold {
+    font-weight: bold;
+}

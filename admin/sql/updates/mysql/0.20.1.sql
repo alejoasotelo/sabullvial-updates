@@ -1,0 +1,2 @@
+INSERT INTO `#__sabullvial_estadocotizacion` (`nombre`, `color`, `color_texto`, `aprobado`, `pendiente`, `rechazado`, `revisado`, `created`) VALUES
+('Rechazado por forma de pago', '#a94442', '#ffffff', 0, 0, 2, 0, now());

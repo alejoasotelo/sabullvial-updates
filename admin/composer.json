@@ -1,0 +1,13 @@
+{
+    "name": "alejoasotelo/com_sabullvial",
+    "description": "Componente Joomla para Bullvial",
+    "authors": [
+        {
+            "name": "Alejo A. Sotelo",
+            "email": "soporte@alejosotelo.com.ar"
+        }
+    ],
+    "require-dev": {
+        "felippe-regazio/php-hot-reloader": "dev-master"
+    }
+}
