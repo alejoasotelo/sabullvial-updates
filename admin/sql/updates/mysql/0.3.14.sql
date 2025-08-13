@@ -1,1 +1,0 @@
-ALTER TABLE `#__sabullvial_remitoestado` CHANGE `delivered_date` `delivery_date` datetime NULL DEFAULT '0000-00-00 00:00:00'; 

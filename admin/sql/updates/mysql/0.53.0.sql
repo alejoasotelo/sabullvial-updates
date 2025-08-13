@@ -1,1 +1,0 @@
-ALTER TABLE `#__sabullvial_tarea` ADD `descripcion` TEXT NULL DEFAULT NULL AFTER `name`;

@@ -1,1 +1,0 @@
-ALTER TABLE `#__sabullvial_cotizacion` ADD `esperar_pagos` tinyint(4) UNSIGNED NULL DEFAULT '0' AFTER `observations`;

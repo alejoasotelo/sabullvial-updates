@@ -1,1 +1,0 @@
-ALTER TABLE `#__sabullvial_cotizacion` ADD `total` DECIMAL(20, 6) NOT NULL DEFAULT '0.000000' AFTER `dolar`;

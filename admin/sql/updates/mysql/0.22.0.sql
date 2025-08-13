@@ -1,1 +1,0 @@
-ALTER TABLE `#__sabullvial_productoimagen` ADD INDEX `id_producto_idx` (`id_producto`); 

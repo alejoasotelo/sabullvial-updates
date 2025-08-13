@@ -1,1 +1,0 @@
-ALTER TABLE `#__sabullvial_tarea` CHANGE `id_cliente` `id_cliente` VARCHAR(6) NOT NULL;

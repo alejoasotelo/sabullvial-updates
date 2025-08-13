@@ -1,1 +1,0 @@
-ALTER TABLE `#__sabullvial_tarea` ADD `created` datetime NOT NULL DEFAULT '0000-00-00 00:00:00' AFTER `task_value`;

@@ -1,2 +1,0 @@
-ALTER TABLE `#__sabullvial_cotizacion` ADD `ordendecompra_numero` VARCHAR(255) NULL AFTER `products`;
-ALTER TABLE `#__sabullvial_cotizacion` ADD `note` varchar(5120) NULL DEFAULT '' AFTER `ordendecompra_file_ext`;

@@ -1,1 +1,0 @@
-ALTER TABLE `#__sabullvial_cotizacion` ADD `id_estadocotizacionpago` INT(11) NOT NULL AFTER `id_lista_precio`;

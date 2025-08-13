@@ -1,1 +1,0 @@
-ALTER TABLE `#__sabullvial_cotizacion` ADD `parent_id` INT(11) NOT NULL AFTER `id`;

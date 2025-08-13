@@ -1,2 +1,0 @@
-ALTER TABLE `#__sabullvial_regla` CHANGE `event_create_value` `event_create_value` VARCHAR(255) NOT NULL;
-ALTER TABLE `#__sabullvial_regla` CHANGE `event_close_value` `event_close_value` VARCHAR(255) NOT NULL;

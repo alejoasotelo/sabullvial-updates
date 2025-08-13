@@ -1,1 +1,0 @@
-ALTER TABLE `#__sabullvial_remitoestado` ADD `delivered_date` datetime NULL DEFAULT '0000-00-00 00:00:00' AFTER `id_estadoremito`;

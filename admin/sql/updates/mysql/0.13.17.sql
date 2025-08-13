@@ -1,1 +1,0 @@
-ALTER TABLE `#__sabullvial_cliente` CHANGE `id_condicionventa_deseada` `condicionventa_deseada` VARCHAR(255) NOT NULL DEFAULT '';

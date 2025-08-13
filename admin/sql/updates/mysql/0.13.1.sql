@@ -1,2 +1,0 @@
-ALTER TABLE `#__sabullvial_cliente` ADD `tango_enviar` tinyint(4) UNSIGNED NULL DEFAULT '0' AFTER `id`;
-ALTER TABLE `#__sabullvial_cliente` ADD `tango_fecha_sincronizacion` datetime NOT NULL DEFAULT '0000-00-00 00:00:00' AFTER `tango_enviar`;

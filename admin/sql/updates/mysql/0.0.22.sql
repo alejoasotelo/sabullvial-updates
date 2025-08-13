@@ -1,1 +1,0 @@
-ALTER TABLE `#__sabullvial_cotizacion` ADD COLUMN `service` tinyint NOT NULL DEFAULT 0 AFTER `products`;

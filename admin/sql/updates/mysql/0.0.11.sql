@@ -1,1 +1,0 @@
-ALTER TABLE `#__sabullvial_estadocotizacion` ADD `color_texto` VARCHAR(255) NULL AFTER `color`; 

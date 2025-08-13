@@ -1,1 +1,0 @@
-ALTER TABLE `#__sabullvial_cliente` ADD `codigo_vendedor` VARCHAR(10) NULL DEFAULT '' AFTER `id`;

@@ -1,1 +1,0 @@
-ALTER TABLE `#__sabullvial_estadocotizacion` ADD `cancelado` tinyint(4) UNSIGNED NULL DEFAULT '0' AFTER `rechazado`;

@@ -1,1 +1,0 @@
-ALTER TABLE `#__sabullvial_tarea` DROP `task_value_select`;

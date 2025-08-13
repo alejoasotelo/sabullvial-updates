@@ -1,1 +1,0 @@
-ALTER TABLE `#__sabullvial_tarea` CHANGE `task_type` `task_type` varchar(255) NOT NULL DEFAULT '';
