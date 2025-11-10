@@ -5,12 +5,12 @@
         <element>com_sabullvial</element>
         <type>component</type>
         <client>administrator</client>
-        <version>1.5.6</version>
+        <version>1.5.7</version>
         <tags>
             <tag>stable</tag>
         </tags>
         <downloads>
-            <downloadurl type="full" format="zip">https://github.com/alejoasotelo/com_sabullvial/releases/download/1.5.6/com_sabullvial.zip</downloadurl>
+            <downloadurl type="full" format="zip">https://github.com/alejoasotelo/com_sabullvial/releases/download/1.5.7/com_sabullvial.zip</downloadurl>
         </downloads>
         <targetplatform name="joomla" version="(5\.[01]|4\.[01234]|3\.([789]|10))\."/>
         <infourl title="SA Bullvial">https://alejosotelo.com.ar</infourl>
